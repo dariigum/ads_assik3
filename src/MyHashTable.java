@@ -1,3 +1,6 @@
+import java.util.Random;
+import MyTestingClass;
+
 public class MyHashTable <K, V>{
 
     private class HashNode<K, V>{
@@ -109,5 +112,28 @@ public class MyHashTable <K, V>{
             }
         }
         return null;
+    }
+
+    public void printBucketSize(){
+        for(int i=0; i<M; i++){
+            int count=0;
+            HashNode<K, V> node = chainArray[i];
+            while (node != null){
+                count++;
+                node = node.next;
+            }
+            System.out.println(count);
+        }
+    }
+
+    public static void main(String[] args) {
+        MyHashTable<Integer, String> hashTable = new MyHashTable<>();
+        Random random = new Random();
+        for(int i=0; i<10; i++){
+            int id = random.nextInt(1000);
+            MyTestingClass object=new MyTestingClass(id);
+            hashTable.put(object, "Value "+i);
+        }
+        hashTable.printBucketSize();
     }
 }
