@@ -129,10 +129,10 @@ public class MyHashTable <K, V>{
     public static void main(String[] args) {
         MyHashTable<Integer, String> hashTable = new MyHashTable<>();
         Random random = new Random();
-        for(int i=0; i<10; i++){
+        for(int i=0; i<10000; i++){
             int id = random.nextInt(1000);
-            MyTestingClass object=new MyTestingClass(id);
-            hashTable.put(object, "Value "+i);
+
+            hashTable.put(id, "Value "+i);
         }
         hashTable.printBucketSize();
     }
