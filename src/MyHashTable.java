@@ -1,5 +1,9 @@
 import java.util.Random;
-
+/**
+ * Implementation of a Hash Table data structure
+ * @param <K> Key type for the hash table entries
+ * @param <V> Value type for the hash table entries
+ */
 
 public class MyHashTable <K, V>{
 

@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * Implementation of Binary Search Tree (BST)
+ * @param <K> Key type for the BST nodes, must implement Comparable interface
+ * @param <V> Value type for the BST nodes
+ */
 
 public class MyBST<K extends Comparable<K>, V> {
     private Node root;

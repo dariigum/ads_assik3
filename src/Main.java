@@ -1,4 +1,7 @@
 import java.util.Random;
+/**
+ * Main class to demonstrate the usage of MyHashTable and MyBST;
+ */
 
 public class Main {
     public static void main(String[] args) {

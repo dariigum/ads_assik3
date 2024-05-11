@@ -1,5 +1,8 @@
 import java.util.Objects;
 import java.util.Random;
+/**
+ * A testing class representing objects to be used as keys in the hash table
+ */
 
 public class MyTestingClass {
     private int id;
