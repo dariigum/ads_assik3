@@ -18,10 +18,10 @@ public class Main {
 
         bst.delete(3);
 
-        // Print the value associated with the deleted key to confirm deletion
+
         System.out.println("Value associated with key 5 after deletion: " + bst.get(3));
 
-        // Print all keys in the BST in ascending order
+
         System.out.println("Keys in asc:");
         for (Integer key : bst.iterator()) {
             System.out.println(key);
